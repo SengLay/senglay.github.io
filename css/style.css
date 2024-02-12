@@ -1,9 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Avenir;
 }
 
 header {
+    font-family: Avenir;
     background-color: #f8f9fa;
     padding: 20px;
     text-align: center;
@@ -15,6 +17,16 @@ main {
 
 h1 {
     font-family: Avenir;
+}
+h1.title-1 {
+    font-size: 40px;
+    font-weight: 100;
+    word-spacing: 2.5pt;
+    letter-spacing: 2.5pt;
+}
+h1.title-2 {
+    font-family: serif;
+    font-size: 100px;
 }
 
 p {
@@ -48,14 +60,16 @@ footer {
 nav {
     display: flex;
     justify-content: center;
+    background-color: #f1f1f1;
+    padding: 10px;
 }
 
 .nav-box {
     display: inline-block;
     width: 50%;
-    padding: 10px;
-    background-color: #f1f1f1;
+    padding: 5px;
     border-radius: 5px;
+    font-size: 20px;
 }
 
 nav a {
@@ -70,18 +84,18 @@ nav a:hover {
     color: black;
 }
 
-.services {
+.activities {
     display: flex;
     justify-content: space-between;
 }
 
-.service {
+.activitie {
     width: 30%;
     padding: 20px;
     background-color: #f1f1f1;
     border-radius: 5px;
 }
 
-.service h3 {
+.activitie h3 {
     margin-bottom: 10px;
 }
