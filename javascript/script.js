@@ -1,3 +1,8 @@
+// Load home.html content when the page loads
+window.onload = function() {
+    loadTab('home.html');
+};
+
 function loadTab(page, element) {
     fetch(page)
         .then(response => response.text())
