@@ -3,51 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Welcome to My Personal Blog</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/images/IMG_2451.PNG" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1 class="title-1">EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</h1>
-        <h1 class="title-2">Train of Thought</h1>
+        <h1 class="title-2">PERSONAL BLOG</h1>
         <nav>
-            <div class="nav-box">
-                <a href="home.html">Home</a>
+            <div class="nav-box" onclick="loadTab('home.html', this)">
+                <a href="#">Home</a>
             </div>
-            <div class="nav-box">
-                <a href="about.html">About</a>
+            <div class="nav-box" onclick="loadTab('about.html', this)">
+                <a href="#">About</a>
             </div>
-            <div class="nav-box">
-                <a href="services.html">Services</a>
+            <div class="nav-box" onclick="loadTab('activities.html', this)">
+                <a href="#">Activities</a>
             </div>
-            <div class="nav-box">
-                <a href="contact.html">Contact</a>
+            <div class="nav-box" onclick="loadTab('contact.html', this)">
+                <a href="#">Contact</a>
+            </div>
+            <div class="nav-box" onclick="loadTab('research.html', this)">
+                <a href="#">Research</a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Activities</h2>
-            <div class="activities">
-                <div class="activitie">
-                    <h3>Activitie 1</h3>
-                    <p>Description of Activitie 1</p>
-                </div>
-                <div class="activitie">
-                    <h3>Activitie 2</h3>
-                    <p>Description of Activitie 2</p>
-                </div>
-                <div class="activitie">
-                    <h3>Activitie 3</h3>
-                    <p>Description of Activitie 3</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <div id="tab-content" class="content">
+        <!-- Content will be loaded dynamically here -->
+    </div>
 
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
+    <script src="/javascript/script.js"></script>
 </body>
 </html>
