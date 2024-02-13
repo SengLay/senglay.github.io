@@ -1,3 +1,13 @@
+@media (max-width: 768px) {
+    /* Styles for small screens (phones) */
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Styles for medium screens (tablets) */
+}
+@media (min-width: 992px) {
+    /* Styles for large screens (desktops) */
+}
+
 /* BODY */
 body {
     margin: 0;
