@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to My Personal Blog</title>
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="icon" href="/images/IMG_2451.PNG" type="image/x-icon">
-    </head>
-    <body>
-        <header>
-            <h1 class="title-1">EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</h1>
-            <h1 class="title-2">PERSONAL BLOG</h1>
-            <nav>
-                <div class="nav-box" onclick="loadTab('home.html', this)">
-                    <a href="#">Home</a>
-                </div>
-                <div class="nav-box" onclick="loadTab('about.html', this)">
-                    <a href="#">About</a>
-                </div>
-                <div class="nav-box" onclick="loadTab('activities.html', this)">
-                    <a href="#">Activities</a>
-                </div>
-                <div class="nav-box" onclick="loadTab('contact.html', this)">
-                    <a href="#">Contact</a>
-                </div>
-                <div class="nav-box" onclick="loadTab('research.html', this)">
-                    <a href="#">Research</a>
-                </div>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Personal Blog</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home_style.css">
+    <link rel="icon" href="/images/IMG_2451.PNG" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 id="title-1" class="up-down-animated-element">EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</h1>
+        <!-- <h1 id="title-2" class="up-down-animated-element">PERSONAL BLOG</h1> -->
 
-        <div id="tab-content" class="content">
-            <!-- Content will be loaded dynamically here -->
+        <!-- Header -->
+        <div class="container">
+            <h1 id="title-2" class="up-down-animated-element">
+                <!-- Main Job Name -->
+                Data Scientist Student 👋🏻 
+                <span class="highlight">
+                    Hi, I'm SENG Lay. A passionate Data Engineer and Machine Learning Engineer based in Phnom Penh, Cambodia. 📍
+                </span>
+
+                <!-- LinkedIn  & GitHub Logo -->
+                <div class="icon-container">
+                    <a href="https://www.linkedin.com/in/seng-lay-67a68b25b/" target="_blank">
+                        <img src="/images/104493_linkedin_icon.ico" alt="LinkedInIcon" class="icon">
+                    </a>
+                    <a href="https://github.com/SengLay" target="_blank">
+                        <img src="/images/211904_social_github_icon.ico" alt="GitHubIcon" class="icon">
+                    </a>
+                </div>
+            </h1>
+            <img id="profile-img" src="/images/IMG_1058.PNG" alt="Profile Image" class="up-down-animated-element">
         </div>
+        <div style="margin-top: 30px;"></div>
+        <nav>
+            <div class="nav-box" onclick="loadTab('home.html', this)">
+                <a href="#">Home</a>
+            </div>
+            <div class="nav-box" onclick="loadTab('about.html', this)">
+                <a href="#">About</a>
+            </div>
+            <div class="nav-box" onclick="loadTab('activities.html', this)">
+                <a href="#">Activities</a>
+            </div>
+            <div class="nav-box" onclick="loadTab('contact.html', this)">
+                <a href="#">Contact</a>
+            </div>
+            <div class="nav-box" onclick="loadTab('research.html', this)">
+                <a href="#">Research</a>
+            </div>
+        </nav>
+    </header>
 
-        <script src="/javascript/script.js"></script>
-    </body>
+    <div id="tab-content" class="content">
+        <!-- Content will be loaded dynamically here -->
+    </div>
+
+    <script src="/javascript/script.js"></script>
+</body>
 </html>
