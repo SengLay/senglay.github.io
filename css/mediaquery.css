@@ -1,8 +1,16 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 932px) {
     #desktop-nav {
         display: none;
     }
     #hamburger-nav {
         display: flex;
+    }
+}
+@media screen and (min-width: 932px) {
+    #desktop-nav {
+        display: flex;
+    }
+    #hamburger-nav {
+        display: none;
     }
 }

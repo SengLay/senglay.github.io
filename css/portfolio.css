@@ -7,7 +7,8 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: Avenir;
 }
 
 html {
@@ -39,7 +40,7 @@ nav {
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 a {
@@ -56,7 +57,8 @@ a:hover {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .logo:hover {
@@ -214,7 +216,7 @@ section {
     cursor: pointer;
     width: 2rem;
     height: 2rem;
-    vertical-align: -5px;
+    vertical-align: middle;
     margin-right: 2rem;
 }
 .logo a {
