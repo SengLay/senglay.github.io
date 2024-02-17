@@ -1,0 +1,49 @@
+/* .container {
+    margin: 100px auto;
+}
+
+.item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+.container {
+    margin: 100px auto; /* Just for demonstration */
+}
+
+.item {
+    font-weight: bold;
+    font-size: 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.para {
+    font-size: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.slide-in {
+    animation: slideIn 2.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Adjust the distance as needed */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

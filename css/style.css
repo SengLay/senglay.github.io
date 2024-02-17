@@ -1,4 +1,9 @@
 /* BODY */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -87,16 +92,14 @@ img {
 }
 
 button {
-    background-color: #007bff;
-    border: none;
     color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 20px 0px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: Avenir;
 }
 
 footer {
@@ -107,39 +110,59 @@ footer {
 }
 
 /* NAVBAR */
+/* NAVBAR */
 nav {
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    /* background-color: #f8f9fa; */
+    /* background-color: #f0f0f0; */
+    padding: 10px 0; /* Full padding behind the entire navigation bar */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    text-align: right; /* Align links to the center */
+    /* position: fixed; Fixed position */
+    width: 100%; /* Make the navigation bar full width */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Align it to the left side of the viewport */
+    z-index: 1000; /* Set a high z-index to ensure it's above other content */
+}
+.nav-box:nth-child(1) {
+    float: left;
 }
 .nav-box {
     display: inline-block;
-    width: 50%;
-    border-radius: 10px;
-    font-size: 15px;
+    vertical-align: middle;
+    padding: 0 20px; /* Adjust padding */
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 5px 5px 5px 5px;
-    border-style: solid;
-    border-width: 2px;
-    margin: 10px 10px 10px 10px;
 }
-nav a {
+.nav-box a {
     text-decoration: none;
-    color: #000;
-    /* padding: 8px 16px; */
-    padding: 20px 20px;
-    display: inline-block;
+    color: black;
+    transition: all 0.3s ease 0s;
 }
-.nav-box:hover a {
-    /* background-color: #ddd; */
-    color: blueviolet;
+.nav-box a:hover {
+    color: #0088a9; /* Change text color on hover */
     font-style: oblique;
 }
+.nav-icon {
+    vertical-align: middle;
+    /* width: 28px; */
+    height: 41px;
+}
+.cta button {
+    background-color: #0088a9;
+    border: none;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: inherit;
+    transition: all 0.3s ease 0s;
+}
+.cta button:hover {
+    color: #0088a9; /* Change text color on hover */
+    font-style: oblique;
+}
+.logo-text {
+    margin-left: 10px; /* Adjust margin as needed */
+    vertical-align: middle; /* Align text vertically with the logo */
+}
+
+
 
 /* ACTIVITIES */
 .activities {
@@ -183,13 +206,15 @@ h1.title-feature {
     font-family: Avenir;
 }
 #subtitle {
-    font-weight: bold;
+    /* text-align: justify; */
+    font-weight: bolder;
     font-size: 30px;
     font-family: Avenir;
 }
-#feature-parag {
+.feature-parag {
     margin: 0;
     font-size: 18px;
+    text-align: justify;
 }
 h3 {
     font-weight: bold;
@@ -199,7 +224,7 @@ h4 {
     margin-top: 10px;
 }
 
-@media (max-width: 932px) {
+@media (max-width: 950px) {
     /* Styles for small screens (phones) */
     header {
         /* width: 430;
@@ -213,12 +238,12 @@ h4 {
         word-spacing: 2.5pt;
         letter-spacing: 2.5pt;
     }
-    nav {
+    /* nav {
         width: 100%;
-        display: flex;
-        justify-content: center; /* Horizontally center the nav */
-    }
-    .nav-box {
+        display: flex; */
+        /* justify-content: center; Horizontally center the nav */
+    /* } */
+    /* .nav-box {
         font-size: 10px;
         margin: 5px 5px 5px 5px;
     }
@@ -227,6 +252,17 @@ h4 {
         color: #000;
         padding: 10px 10px;
         display: inline-block;
+    } */
+    nav {
+        padding: 10px 0; /* Full padding behind the entire navigation bar */
+        text-align: center; /* Align links to the center */
+    }
+    .nav-box {
+        display: block;
+        margin: 10px auto; /* Center the navigation links */
+    }
+    .nav-box:nth-child(1) {
+        float: none;
     }
     #main-title {
         font-weight: bold;
@@ -235,6 +271,7 @@ h4 {
         align-items: center;
     }
     #subtitle {
+        /* text-align: justify; */
         font-weight: bold;
         font-size: 23px;
         font-family: Avenir;
@@ -253,7 +290,7 @@ h4 {
     }
     .container {
         display: inline-block;
-        text-align: center;
+        /* text-align: center; */
         justify-content: center;
         margin: 0;
     }
@@ -283,3 +320,4 @@ h4 {
 .up-down-animated-element {
     animation: slideIn 1.5s ease-in-out;
 }
+

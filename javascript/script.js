@@ -1,4 +1,3 @@
-// Load home.html content when the page loads
 window.onload = function() {
     loadTab('home.html');
 };
@@ -9,10 +8,19 @@ function loadTab(page, element) {
         .then(data => {
             document.getElementById('tab-content').innerHTML = data;
             // Highlight the selected tab
-            document.querySelectorAll('.nav-box').forEach(navItem => {
-                navItem.classList.remove('active');
-            });
-            element.classList.add('active');
+            if (element) {
+                document.querySelectorAll('.nav-box').forEach(navItem => {
+                    navItem.classList.remove('active');
+                });
+                element.classList.add('active');
+            }
+            // Check if the clicked tab is the portfolio
+            if (page === 'portfolio.html') {
+                document.querySelector('header').innerHTML = ''; // Clear the content of main
+            }
+            if (page === 'portfolio.html') {
+                document.querySelector('head').innerHTML = ''; // Clear the content of main
+            }
         })
         .catch(error => console.error('Error:', error));
 }
