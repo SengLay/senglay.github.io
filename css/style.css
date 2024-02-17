@@ -109,47 +109,21 @@ footer {
     font-size: 17px;
 }
 
+
 /* NAVBAR */
-/* NAVBAR */
-nav {
-    /* background-color: #f0f0f0; */
-    padding: 10px 0; /* Full padding behind the entire navigation bar */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    text-align: right; /* Align links to the center */
-    /* position: fixed; Fixed position */
-    width: 100%; /* Make the navigation bar full width */
-    top: 0; /* Position it at the top of the viewport */
-    left: 0; /* Align it to the left side of the viewport */
-    z-index: 1000; /* Set a high z-index to ensure it's above other content */
-}
-.nav-box:nth-child(1) {
-    float: left;
-}
 .nav-box {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 20px; /* Adjust padding */
-    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: default;
 }
 .nav-box a {
     text-decoration: none;
-    color: black;
-    transition: all 0.3s ease 0s;
-}
-.nav-box a:hover {
-    color: #0088a9; /* Change text color on hover */
-    font-style: oblique;
-}
-.nav-icon {
-    vertical-align: middle;
-    /* width: 28px; */
-    height: 41px;
 }
 .cta button {
-    background-color: #0088a9;
+    background-color: wheat;
     border: none;
     cursor: pointer;
-    color: whitesmoke;
+    color: black;
     font-size: inherit;
     transition: all 0.3s ease 0s;
 }
@@ -320,4 +294,116 @@ h4 {
 .up-down-animated-element {
     animation: slideIn 1.5s ease-in-out;
 }
-
+/* ***************************************** */
+/* NAVBAR */
+nav,
+.nav-links {
+    display: flex;
+}
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+.nav-links a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+.logo {
+    font-size: 2rem;
+    height: 60px;
+    vertical-align: -17.5px;
+}
+.logo:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+/* ICONS */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+.go-back {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: -5px;
+}
+/* HAMBURGER NAVBAR */
+#hamburger-nav {
+    display: none;
+}
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links li {
+    list-style: none;
+}
+.menu-links.open {
+    max-height: 300px;
+}
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+.hamburger-icon span:first-child {
+    transform: none;
+}
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+.hamburger-icon span:first-child {
+    transform: none;
+}
+/* ***************************************** */

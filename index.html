@@ -5,37 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Personal Blog</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mediaquery.css">
     <link rel="icon" href="/images/main-logo.png" type="image/x-icon">
 </head>
     <body>
         <header>
-            <nav>
+            <nav id="desktop-nav">
                 <div class="nav-box">
-                    <a href="#" onclick="window.location.reload()">
-                        <img src="/images/main-logo.png" alt="LinkedIn Icon" class="nav-icon">
+                    <a href="/index.html">
+                        <img src="/images/main-logo.png" alt="Main Logo" class="logo">
                     </a>
-                    <span class="logo-text">SENG LAY - សេង ឡាយ</span>
+                    SENG Lay
                 </div>
-                <div class="nav-box" onclick="loadTab('home.html', this)">
-                    <a href="#">Home</a>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#" onclick="loadTab('home.html', this)">Home</a></li>
+                        <li><a href="#" onclick="loadTab('about.html', this)">About</a></li>
+                        <li><a href="#" onclick="loadTab('activities.html', this)">Activities</a></li>
+                        <li><a href="#" onclick="loadTab('research.html', this)">Research</a></li>
+                        <li><a href="#" onclick="loadTab('portfolio.html', this)">Portfolio</a></li>
+                    </ul>
                 </div>
-                <div class="nav-box" onclick="loadTab('about.html', this)">
-                    <a href="#">About</a>
+            </nav>
+            <nav id="hamburger-nav">
+                <div class="nav-box">
+                    <a href="/index.html">
+                        <img src="/images/main-logo.png" alt="Main Logo" class="logo">
+                    </a>
+                    SENG Lay
                 </div>
-                <div class="nav-box" onclick="loadTab('activities.html', this)">
-                    <a href="#">Activities</a>
-                </div>
-                <div class="nav-box" onclick="loadTab('research.html', this)">
-                    <a href="#">Research</a>
-                </div>
-                <div class="nav-box" onclick="loadTab('portfolio.html', this)">
-                    <a href="#">Portfolio</a>
-                </div>
-                <div class="nav-box" onclick="loadTab('contact.html', this)">
-                    <a href="#" class="cta"><button>Contact</button></a>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="#" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#" onclick="toggleMenu()">Activities</a></li>
+                        <li><a href="#" onclick="toggleMenu()">Research</a></li>
+                        <li><a href="#" onclick="toggleMenu()">Portfolio</a></li>
+                    </div>
                 </div>
             </nav>
 
+            <div style="margin-top: 1cm;"></div>
             <h1 id="title-1" class="up-down-animated-element">EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</h1>
             <!-- <h1 id="title-2" class="up-down-animated-element">PERSONAL BLOG</h1> -->
 
