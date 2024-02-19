@@ -16,11 +16,21 @@ function loadTab(page, element) {
             }
             // Check if the clicked tab is the portfolio
             if (page === 'portfolio.html') {
-                document.querySelector('header').innerHTML = ''; // Clear the content of main
+                document.querySelector('head').innerHTML = '';
             }
             if (page === 'portfolio.html') {
-                document.querySelector('head').innerHTML = ''; // Clear the content of main
+                document.querySelector('header').innerHTML = '';
             }
+            if (page === 'portfolio.html') {
+                document.querySelector('.quote').innerHTML = '';
+            }
+            if (page === 'portfolio.html') {
+                document.querySelector('.container').innerHTML = '';
+            }
+            if (page === 'portfolio.html') {
+                document.querySelector('main').innerHTML = '';
+            }
+
         })
         .catch(error => console.error('Error:', error));
 }
