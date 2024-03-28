@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mediaquery.css">
+    <link rel="icon" href="/images/main-logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <div class="nav-box">
+                <a href="/index.html">
+                    <img src="/images/main-logo.png" alt="Main Logo" class="logo">
+                </a>
+                SENG Lay
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="loadTab('home.html', this)">Home</a></li>
+                    <li><a href="#" onclick="loadTab('about.html', this)">About</a></li>
+                    <li><a href="#" onclick="loadTab('activities.html', this)">Activities</a></li>
+                    <li><a href="#" onclick="loadTab('research.html', this)">Research</a></li>
+                    <li><a href="#" onclick="loadTab('portfolio.html', this)">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="nav-box">
+                <a href="/index.html">
+                    <img src="/images/main-logo.png" alt="Main Logo" class="logo">
+                </a>
+                SENG Lay
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#" onclick="loadTab('home.html', this)">Home</a></li>
+                    <li><a href="#" onclick="loadTab('about.html', this)">About</a></li>
+                    <li><a href="#" onclick="loadTab('activities.html', this)">Activities</a></li>
+                    <li><a href="#" onclick="loadTab('research.html', this)">Research</a></li>
+                    <li><a href="#" onclick="loadTab('portfolio.html', this)">Portfolio</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- upper quote -->
+        <div class="quote">
+            <div class="up-down-animated-element">EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</div>
+        </div>
+        <!-- container -->
+        <div class="container">
+
+            <!-- description aticle -->
+            <h1 id="title-2" class="up-down-animated-element">
+
+                <!-- main job name -->
+                <div class="jobtitle">Data Scientist Student 👋🏻</div>
+                <span class="highlight">
+                    Hi, I'm SENG Lay. A passionate Data Engineer and Machine Learning Engineer, also interested in Web Development based in Phnom Penh, Cambodia. 📍
+                </span>
+
+                <div style="margin-top: 15px;"></div>
+
+                <!-- linkedin  & github logo -->
+                <div class="icon-container">
+                    <a href="https://www.linkedin.com/in/seng-lay-67a68b25b/" target="_blank">
+                        <img src="/images/104493_linkedin_icon.ico" alt="LinkedIn Icon" class="icon">
+                    </a>
+                    <a href="https://github.com/SengLay" target="_blank">
+                        <img src="/images/211904_social_github_icon.ico" alt="GitHub Icon" class="icon">
+                    </a>
+                    <a href="https://t.me/senglay_lay" target="_blank">
+                        <img src="/images/9025961_telegram_logo_icon.ico" alt="Telegram Icon" class="icon">
+                    </a>
+                </div>
+            </h1>
+            <!-- profile image -->
+            <img id="profile-img" class="up-down-animated-element" src="/images/IMG_1058.PNG" alt="Profile Image">
+        </div>
+    </main>
+
+    <div id="tab-content" class="content">
+        <!-- content will be loaded dynamically here -->
+    </div>
+
+    <script src="/javascript/script.js"></script>
+    <script src="/javascript/portfolio_script.js"></script>
+
+</body>
+</html>

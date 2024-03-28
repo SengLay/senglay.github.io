@@ -1,99 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/mediaquery.css">
-    <link rel="icon" href="/images/main-logo.png" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <nav id="desktop-nav">
-            <div class="nav-box">
-                <a href="/index.html">
-                    <img src="/images/main-logo.png" alt="Main Logo" class="logo">
-                </a>
-                SENG Lay
-            </div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#" onclick="loadTab('home.html', this)">Home</a></li>
-                    <li><a href="#" onclick="loadTab('about.html', this)">About</a></li>
-                    <li><a href="#" onclick="loadTab('activities.html', this)">Activities</a></li>
-                    <li><a href="#" onclick="loadTab('research.html', this)">Research</a></li>
-                    <li><a href="#" onclick="loadTab('portfolio.html', this)">Portfolio</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="nav-box">
-                <a href="/index.html">
-                    <img src="/images/main-logo.png" alt="Main Logo" class="logo">
-                </a>
-                SENG Lay
-            </div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#" onclick="loadTab('home.html', this)">Home</a></li>
-                    <li><a href="#" onclick="loadTab('about.html', this)">About</a></li>
-                    <li><a href="#" onclick="loadTab('activities.html', this)">Activities</a></li>
-                    <li><a href="#" onclick="loadTab('research.html', this)">Research</a></li>
-                    <li><a href="#" onclick="loadTab('portfolio.html', this)">Portfolio</a></li>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!-- upper quote -->
-        <div class="quote">
-            <div class="up-down-animated-element">EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</div>
+    <link rel="stylesheet" href="/css/portfolio.css" />
+    <link rel="stylesheet" href="/css/mediaquery.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <!-- <div class="logo">
+        <a href="/index.html">
+          <img
+            src="/assets/short-back-arrow.png"
+            alt="Go Back"
+            class="go-back"
+          />
+        </a>
+        Go Back
+      </div> -->
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="/index.html">
+          <img
+            src="/assets/short-back-arrow.png"
+            alt="Go Back"
+            class="go-back"
+          />
+        </a>
+        SENG Lay
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <!-- container -->
-        <div class="container">
-
-            <!-- description aticle -->
-            <h1 id="title-2" class="up-down-animated-element">
-
-                <!-- main job name -->
-                <div class="jobtitle">Data Scientist Student 👋🏻</div>
-                <span class="highlight">
-                    Hi, I'm SENG Lay. A passionate Data Engineer and Machine Learning Engineer, also interested in Web Development based in Phnom Penh, Cambodia. 📍
-                </span>
-
-                <div style="margin-top: 15px;"></div>
-
-                <!-- linkedin  & github logo -->
-                <div class="icon-container">
-                    <a href="https://www.linkedin.com/in/seng-lay-67a68b25b/" target="_blank">
-                        <img src="/images/104493_linkedin_icon.ico" alt="LinkedIn Icon" class="icon">
-                    </a>
-                    <a href="https://github.com/SengLay" target="_blank">
-                        <img src="/images/211904_social_github_icon.ico" alt="GitHub Icon" class="icon">
-                    </a>
-                    <a href="https://t.me/senglay_lay" target="_blank">
-                        <img src="/images/9025961_telegram_logo_icon.ico" alt="Telegram Icon" class="icon">
-                    </a>
-                </div>
-            </h1>
-            <!-- profile image -->
-            <img id="profile-img" class="up-down-animated-element" src="/images/IMG_1058.PNG" alt="Profile Image">
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-    </main>
+      </div>
+    </nav>
 
-    <div id="tab-content" class="content">
-        <!-- content will be loaded dynamically here -->
-    </div>
+    <!-- PROFILE -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="images/profile.jpg"
+          alt="John Doe profile picture"
+          class="profile-img"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">SENG Lay</h1>
+        <p class="section__text__p2">Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/CV_Internship.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://linkedin.com/', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/', '_blank')"
+          />
+          <img
+            src="./assets/telegram.png"
+            alt="My Telegram profile"
+            class="icon"
+            onclick="window.open('https://t.me/senglay_lay', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
 
-    <script src="/javascript/script.js"></script>
+    <!-- ABOUT -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./images/IMG_1058.PNG"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Data Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Engineering Degree of Applied Mathematics and Statistics
+                (Current)
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- EXPERIENCE -->
+    
+
     <script src="/javascript/portfolio_script.js"></script>
-
-</body>
+  </body>
 </html>
