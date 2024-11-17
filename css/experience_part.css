@@ -1,0 +1,26 @@
+/* ABOUT SECTION */
+
+#experience {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.exp-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.exp-containers, .exp-details-container {
+    display: flex;
+}
+
+.exp-pic {
+    border-radius: 2rem;
+}
