@@ -1,3 +1,8 @@
 .gitattributes
 .DS_Store
 /images/.DS_Store
+
+# Test file (no need to push into Repository)
+test.html
+/css/test.css
+/javascript/test.js
