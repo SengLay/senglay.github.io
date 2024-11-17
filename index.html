@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Portfolio</title>
     <link rel="stylesheet" href="/css/portfolio.css" />
+    <link rel="stylesheet" href="/css/about_part.css" />
+    <link rel="stylesheet" href="/css/experience_part.css" />
     <link rel="stylesheet" href="/css/mediaquery.css" />
+    <link rel="stylesheet" href="/css/button.css" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -59,18 +62,18 @@
       <div class="section__pic-container">
         <img
           src="images/profile.jpg"
-          alt="John Doe profile picture"
+          alt="Main profile picture"
           class="profile-img"
         />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">SENG Lay</h1>
-        <p class="section__text__p2">Data Scientist</p>
+        <p class="section__text__p2">Data Scientist Student</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('assets/CV_Internship.pdf')"
+            onclick="window.open('pdf/Updated_CV_2024.pdf')"
           >
             Download CV
           </button>
@@ -103,18 +106,65 @@
 
     <!-- ABOUT -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+      <p class="section__text__p1">Get to Know Me More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <!-- <div class="section__pic-container">
           <img
             src="./images/IMG_1058.PNG"
             alt="Profile picture"
             class="about-pic"
           />
-        </div>
+        </div> -->
         <div class="about-details-container">
           <div class="about-containers">
+            <!-- PERSONAL DESCRIPTION -->
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Personal Profile</h3>
+              <i>
+                <p>
+                  A passionate and motivated student eager to gain hands-on experience in data science, with a strong focus on <b>Machine Learning (ML)</b> and <b>Artificial Intelligence (AI)</b>. Committed to <b>continuous learning</b> and <b>growth in a fast-paced environment</b>.
+                </p>
+              </i>
+            </div>
+
+            <!-- EDUCATION -->
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                5th Year Student Pursing in an <br>
+                <b>Engineering Degree of Applied Mathematics and Statistics (AMS)</b> <br/> 
+                at <b>Institute of Technology of Cambodia (ITC)</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <p class="section__text__p1">More about My Experiences</p>
+      <h1 class="title">My Experience</h1>
+      <div class="section-container">
+        <div class="exp-details-container">
+          <div class="exp-containers">
             <div class="details-container">
               <img
                 src="./assets/experience.png"
@@ -153,11 +203,9 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#about'"
       />
     </section>
-
-    <!-- EXPERIENCE -->
     
 
     <script src="/javascript/portfolio_script.js"></script>

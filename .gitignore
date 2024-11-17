@@ -4,5 +4,19 @@
 
 # Test file (no need to push into Repository)
 test.html
+index_test.html
+
 /css/test.css
+
 /javascript/test.js
+
+
+# Un-needed images and PDF
+assets/about-pic.png
+assets/profile-pic-2.png
+assets/profile-pic.png
+assets/project-1.png
+assets/project-2.png
+assets/project-3.png
+
+pdf/CV_Internship.pdf
